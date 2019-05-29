@@ -113,3 +113,53 @@ __`michal.sanger@kiwi.com`__
 ![inline](images/relay-talk01.jpg)![inline](images/relay-talk02.jpg)
 
 ![inline](images/relay-talk03.jpg)![inline](images/relay-talk04.jpg)
+
+---
+
+#[fit] __Better Fetch library__<br /> <br />[@kiwicom/fetch](https://www.npmjs.com/package/@kiwicom/fetch)
+
+---
+
+# Kiwi Fetch
+
+- Retries
+- Timeouts
+- Error handling
+
+---
+
+# Fetch - timeout, retries
+
+```js
+import fetchWithRetries from '@kiwicom/fetch';
+
+fetchWithRetries(
+  'https://example.api',
+  {
+    fetchTimeout: 15000,
+    retryDelays: [1000, 3000],
+    // ... standard Fetch options
+  },
+);
+
+```
+
+---
+
+# Fetch - error handling
+
+```js
+import fetchWithRetries, { TimeoutError, ResponseError } from '@kiwicom/fetch';
+
+try {
+  const response = await fetchWithRetries('//localhost');
+} catch (error) {
+  if (error instanceof TimeoutError) {
+    console.error('request timeouted');
+  } else if (error instanceof ResponseError) {
+    console.error('unsuccessful response', error.response);
+  } else {
+    console.error('unknown error');
+  }
+}
+```
