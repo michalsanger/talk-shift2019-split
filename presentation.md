@@ -163,3 +163,59 @@ try {
   }
 }
 ```
+
+---
+
+
+#[fit] __Opinionated ESlint rules__<br /> <br />[@kiwicom/eslint-config](https://www.npmjs.com/package/@kiwicom/eslint-config)
+
+---
+# Kiwi ESlint config
+
+- React, RN, Hooks, Relay
+- Prettier, Jest
+- Flow, Node
+- extendable
+
+---
+
+# ESlint - setup
+
+```js
+//.eslintrc.js
+module.exports = {
+  root: true,
+  extends: [
+    '@kiwicom/eslint-config',
+  ],
+};
+```
+
+---
+
+# ESLint runner
+
+- Parallel execution
+- Only changed files
+- Auto fix
+
+---
+
+![fit](images/eslint-runner.png)
+
+---
+
+#[fit] __Babel Preset__<br /> <br />@kiwicom/babel-preset-kiwicom
+
+---
+
+# Babel Preset
+
+- Flow, JSX
+- Class properties
+- Relay fragments
+- Syntactic sugar
+
+---
+
+#[fit] [__github.com__/kiwicom/](https://github.com/kiwicom/)
