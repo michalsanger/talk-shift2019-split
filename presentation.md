@@ -41,7 +41,7 @@ __`michal.sanger@kiwi.com`__
 
 ---
 
-#[fit] __Opensource__<br />[__github.com__/kiwicom/margarita](https://github.com/kiwicom/margarita)
+#[fit] __Opensource__<br /> <br />[__github.com__/kiwicom/margarita](https://github.com/kiwicom/margarita)
 
 ---
 
