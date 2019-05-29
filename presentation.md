@@ -89,3 +89,27 @@ __`michal.sanger@kiwi.com`__
 ---
 
 #[fit] [margarita__.kiwi.com__](https://margarita.kiwi.com)<br /> <br />[__github.com__/kiwicom/margarita](https://github.com/kiwicom/margarita)
+
+---
+
+#[fit] Learn __Relay__<br /> <br />[__github.com__/kiwicom/relay-example](https://github.com/kiwicom/relay-example)
+
+---
+# Learn Relay
+
+- GraphQL fragments
+- simple fetching
+- Endless pagination
+- bi-directional pagination
+
+---
+
+![fit](images/relay-example.png)
+
+---
+
+# Relay talks
+
+![inline](images/relay-talk01.jpg)![inline](images/relay-talk02.jpg)
+
+![inline](images/relay-talk03.jpg)![inline](images/relay-talk04.jpg)
