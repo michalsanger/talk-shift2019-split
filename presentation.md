@@ -45,6 +45,12 @@ __`michal.sanger@kiwi.com`__
 
 ---
 
+# Margarita
+
+![inline](images/margarita-schema.png)
+
+---
+
 # We handle
 - backend
 - payments
