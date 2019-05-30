@@ -258,7 +258,7 @@ module.exports = {
 
 ---
 
-#[fit] __Babel Preset__<br /> <br />@kiwicom/babel-preset-kiwicom
+#[fit] __Babel Preset__<br /> <br />[@kiwicom/babel-preset-kiwicom](https://www.npmjs.com/package/@kiwicom/babel-preset-kiwicom)
 
 ---
 
