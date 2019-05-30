@@ -71,6 +71,53 @@ __`michal.sanger@kiwi.com`__
 
 ---
 
+# Platform tweaks
+
+```js
+<CarrierLogo
+  size={Platform.OS === 'web' ? 'large' : 'medium'}
+  carriers={carriers}
+/>
+```
+
+---
+
+# Platform tweaks
+
+```js
+const styles = StyleSheet.create({
+  text: {
+    ios: {
+      color: 'pink'
+    },
+    android: {
+      color: 'deepink'
+    },
+    web: {
+      color: 'salmon'
+    }
+  }
+});
+```
+
+---
+
+# Platform tweaks
+
+## *`ItineraryCard.native.js`*
+
+![inline](images/ItineraryCardWrapper-native.png)
+
+---
+
+# Platform tweaks
+
+## *`ItineraryCard.web.js`*
+
+![inline](images/ItineraryCardWrapper-web.png)
+
+---
+
 ![inline autoplay mute](images/margarita-demo-2019-04-01.mp4)
 
 ---
