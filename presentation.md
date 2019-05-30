@@ -282,3 +282,13 @@ module.exports = {
 ![inline](images/github-issues.png)
 
 ![inline](images/github-pr.png)
+
+---
+
+#[fit] One more thing...
+
+---
+
+#[fit] [summercamp.cz](https://summercamp.cz/)
+
+![inline](images/summercamp.jpg)
