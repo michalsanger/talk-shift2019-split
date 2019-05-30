@@ -7,13 +7,28 @@ theme: Ostrich, 6
 ## __Michal Sänger__
 __`michal.sanger@kiwi.com`__
 
+^
+- UI components that you write once and use across multiple platforms is an interesting topic.
+- What are the benefits from customer POV?
+- Is the technology ready?
+- How does it affect project management?
+- I'll try to answer these questions in my short talk
+- My name is Michal, I work in Kiwi.com in Prague, Czech republic
+
 ---
 
 #[fit] Kiwi.com __wants to__<br /> make travel better
 
+^
+- In Kiwi.com we want to make the travel better!
+- How do we want to make it better?
+
 ---
 
 ![inline](images/ios-web-android.jpg)
+
+^
+- ... by delivering useful features to all platforms our customers use.
 
 ---
 
@@ -39,9 +54,16 @@ __`michal.sanger@kiwi.com`__
 
 ![inline](images/margarita-01.jpg)
 
+^
+- It's a showcase application how integrate travel features into your product or how to build your own Kiwi.com
+- It's also a chance for us to experiment with new technologies
+
 ---
 
 #[fit] __Opensource__<br /> <br />[__github.com__/kiwicom/margarita](https://github.com/kiwicom/margarita)
+
+^
+It's opensourced since the first commit
 
 ---
 
@@ -67,6 +89,10 @@ __`michal.sanger@kiwi.com`__
 
 #[fit] __How to__<br />Multiplatform UI
 
+^
+- How did we actually implement the Multiplatform UI?
+- One could say we used two main libraries or approaches for that
+
 ---
 
 #[fit] React Native __first__
@@ -74,6 +100,12 @@ __`michal.sanger@kiwi.com`__
 ---
 
 #[fit] React Native Web<br />__for browser__
+
+^
+- ...we rendered those RN components with RNW
+- but there is important product requirement. The customer has to have best possible UX
+- Software engineer could see the job is done once the RN component is rendered in browser.
+- UX designer has valid requirement to tweak the components on every platform to increase UX
 
 ---
 
@@ -126,14 +158,26 @@ const styles = StyleSheet.create({
 
 ![inline autoplay mute](images/margarita-demo-2019-04-01.mp4)
 
+^
+This demo should prove the technology is ready
+
+---
+
+#[fit] __Shared__ UI<br />__Shared__ know-how
+
+^
+From project POV biggest benefits are
+- sharing know-how
+- smaller teams
+- faster features delivery in sync
+
 ---
 
 #[fit] __Rework__ [https://orbit.kiwi](https://orbit.kiwi)
 ![inline](images/orbit.jpg)
 
----
-
-#[fit] __Shared__ UI<br />__Shared__ know-how
+^
+During development of Margarita we picked components from our design system Orbit and rewrote them from React into React Native
 
 ---
 
@@ -143,9 +187,27 @@ const styles = StyleSheet.create({
 
 #[fit] [margarita__.kiwi.com__](https://margarita.kiwi.com)<br /> <br />[__github.com__/kiwicom/margarita](https://github.com/kiwicom/margarita)
 
+^
+- Run the application and learn from the source code how was it build.
+- Feel free to create an issue if anything is unclear or broken
+- As I have some more time left, let me share few more interesting opensource projects we made
+
 ---
 
 #[fit] Learn __Relay__<br /> <br />[__github.com__/kiwicom/relay-example](https://github.com/kiwicom/relay-example)
+
+^
+When you'll be checking the source code of Margarita, you will se it fetches data via GraphQL
+We are using Relay FE framework this.
+Lot of people use Apollo but we think Relay is better for bigger applications and it's good to learn it and use since beginning, later migration can be difficult.
+
+---
+
+![inline](images/relay-example.png)
+
+^
+We published small example project, build on Next.js
+Focused on explaining few basic features and principals
 
 ---
 # Learn Relay
@@ -154,10 +216,6 @@ const styles = StyleSheet.create({
 - simple fetching
 - Endless pagination
 - bi-directional pagination
-
----
-
-![inline](images/relay-example.png)
 
 ---
 
@@ -171,6 +229,9 @@ const styles = StyleSheet.create({
 
 #[fit] __Better Fetch library__<br /> <br />[@kiwicom/fetch](https://www.npmjs.com/package/@kiwicom/fetch)
 
+^
+When playing with Relay Example project, you can notice there is a handy fetch library being used
+
 ---
 
 # Kiwi Fetch
@@ -178,6 +239,10 @@ const styles = StyleSheet.create({
 - Retries
 - Timeouts
 - Error handling
+
+^
+We were missing some features in standard fetch libs, so we implemented them
+The usage is simple
 
 ---
 
@@ -219,8 +284,10 @@ try {
 
 ---
 
-
 #[fit] __Opinionated ESlint rules__<br /> <br />[@kiwicom/eslint-config](https://www.npmjs.com/package/@kiwicom/eslint-config)
+
+^
+And when you gonna check source of our project, you will notice we keep them in consistent shape with our set of ESLint rules
 
 ---
 # Kiwi ESlint config
@@ -228,7 +295,6 @@ try {
 - React, RN, Hooks, Relay
 - Prettier, Jest
 - Flow, Node
-- extendable
 
 ---
 
@@ -244,6 +310,10 @@ module.exports = {
 };
 ```
 
+^
+Again it's very simple to use it
+And it comes with a great bonus...
+
 ---
 
 # ESLint runner
@@ -252,6 +322,10 @@ module.exports = {
 - Only changed files
 - Auto fix
 
+^
+Big projects can take lot of time when there is a lot of rules in your config
+Runner is build on Jest runner so it can run in parallel and check only files that were changed
+
 ---
 
 ![inline](images/eslint-runner.png)
@@ -259,6 +333,9 @@ module.exports = {
 ---
 
 #[fit] __Babel Preset__<br /> <br />[@kiwicom/babel-preset-kiwicom](https://www.npmjs.com/package/@kiwicom/babel-preset-kiwicom)
+
+^
+And of course we published also our Babel preset so everyone can write modern JS
 
 ---
 
@@ -269,9 +346,16 @@ module.exports = {
 - Relay fragments
 - Syntactic sugar
 
+^
+GraphQL fragments over fetching
+Optional chaining
+
 ---
 
 #[fit] [__github.com__/kiwicom](https://github.com/kiwicom/)
+
+^
+So the point basically is - check our Github, we have a lot of cool stuff there :-)
 
 ---
 
@@ -283,6 +367,10 @@ module.exports = {
 
 ![inline](images/github-pr.png)
 
+^
+And please when you are gonna be there, show your love and provide feedback
+Give stars to projects you liked, create issues when you have some questions or even provide pull requests when you see how something could be improved
+
 ---
 
 #[fit] One more thing...
@@ -292,3 +380,9 @@ module.exports = {
 #[fit] [summercamp.cz](https://summercamp.cz/)
 
 ![inline](images/summercamp.jpg)
+
+^
+We did it last year and it was fun
+We provide transport, 1000 EUR voucher, accommodation, parties and tons of knowledge
+Meet the guys who wrote the stuff I presented
+All you have to do is register and pass the test we'll send you
