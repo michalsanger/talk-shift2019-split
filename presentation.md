@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
 
 ---
 
-![fit](images/relay-example.png)
+![inline](images/relay-example.png)
 
 ---
 
@@ -254,7 +254,7 @@ module.exports = {
 
 ---
 
-![fit](images/eslint-runner.png)
+![inline](images/eslint-runner.png)
 
 ---
 
@@ -272,3 +272,13 @@ module.exports = {
 ---
 
 #[fit] [__github.com__/kiwicom](https://github.com/kiwicom/)
+
+---
+
+# Show your :heart:
+
+![inline](images/github-star.png)
+
+![inline](images/github-issues.png)
+
+![inline](images/github-pr.png)
