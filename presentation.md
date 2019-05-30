@@ -2,7 +2,7 @@ autoscale: true
 theme: Ostrich, 6
 
 
-
+<br />
 # [fit] Multiplatform UI
 ## __Michal Sänger__
 __`michal.sanger@kiwi.com`__
@@ -10,6 +10,10 @@ __`michal.sanger@kiwi.com`__
 ---
 
 #[fit] Kiwi.com __wants to__<br /> make travel better
+
+---
+
+![inline](images/ios-web-android.jpg)
 
 ---
 
@@ -22,10 +26,6 @@ __`michal.sanger@kiwi.com`__
 ---
 
 ![inline](images/android-01.jpg) ![inline](images/android-02.jpg)
-
----
-
-![inline](images/ios-web-android.jpg)
 
 ---
 
@@ -218,4 +218,4 @@ module.exports = {
 
 ---
 
-#[fit] [__github.com__/kiwicom/](https://github.com/kiwicom/)
+#[fit] [__github.com__/kiwicom](https://github.com/kiwicom/)
